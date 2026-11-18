@@ -16,6 +16,7 @@
         <module>saas-promo</module>
         <module>saas-finance</module>
         <module>saas-device</module>
+        <module>saas-demo</module>
     </modules>
 
     <properties>

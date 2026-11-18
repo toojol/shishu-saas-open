@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>市枢 · 开源规则演示</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>市枢 · 开源规则演示</h1>
+    <p class="sub">下面的计算由本仓库的 Java 规则代码完成（<code>saas-demo</code> 服务），页面只负责输入和展示。完整产品请访问
+      <a href="http://trial.tyinuo.com/login" target="_blank" rel="noopener">体验店</a>。</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. 联营对账</h2>
+      <p class="hint">每行：合作方ID, 行净额, 商品扣点(可空), 合同扣点。扣点单位为百分比。同一合作方的不同行可以有不同扣点。</p>
+      <textarea id="consign-input" rows="6">1,100,10,20
+1,100,,20
+2,50,,15</textarea>
+      <button id="consign-run">计算联营对账</button>
+      <div id="consign-out" class="out"></div>
+    </section>
+
+    <section class="card">
+      <h2>2. 日结支付对账</h2>
+      <p class="hint">sales 为当日应收销售额；每行一种支付方式，退款填负数。现金可另填应有现金与实点现金，计算长短款。</p>
+      <textarea id="day-input" rows="7">sales=300
+CASH,120
+WECHAT,100
+ALIPAY,80
+cashExpected=120
+cashCounted=118</textarea>
+      <button id="day-run">计算日结对账</button>
+      <div id="day-out" class="out"></div>
+    </section>
+
+    <section class="card">
+      <h2>3. 电子秤条码解析</h2>
+      <p class="hint">默认 13 位：前缀 21 + 5 位 PLU + 6 位重量（千克 × 0.001）+ 校验位。可试试把最后一位改掉。</p>
+      <div class="row">
+        <input id="scale-code" value="2100018012502" maxlength="13">
+        <button id="scale-run">解析</button>
+      </div>
+      <div id="scale-out" class="out"></div>
+    </section>
+
+    <section class="card">
+      <h2>4. 大华 TM 的 PLU 下发帧</h2>
+      <p class="hint">把一条商品写到电子秤的命令文本（GB2312 编码的品名）。这是门里派发 PLU 时，收银机实际发给秤的内容。</p>
+      <div class="row">
+        <input id="plu-no" value="12" placeholder="PLU 号 1～9999">
+        <input id="plu-name" value="青菜" placeholder="品名">
+        <input id="plu-price" value="3.50" placeholder="零售价（元）">
+        <button id="plu-run">生成帧</button>
+      </div>
+      <div id="plu-out" class="out"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>本页面仅为规则演示，不是完整收银系统。数据不会保存，计算均在本机服务完成。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

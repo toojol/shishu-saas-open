@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.shishu.open</groupId>
+        <artifactId>shishu-saas-open</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>saas-demo</artifactId>
+    <description>本地演示服务：把联营、日结、秤协议的规则暴露为 HTTP 接口，供 web-demo 页面调用。仅用于演示，不是生产服务。</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.shishu.open</groupId>
+            <artifactId>saas-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.shishu.open</groupId>
+            <artifactId>saas-consign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.shishu.open</groupId>
+            <artifactId>saas-finance</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.shishu.open</groupId>
+            <artifactId>saas-device</artifactId>
+        </dependency>
+    </dependencies>
+</project>
