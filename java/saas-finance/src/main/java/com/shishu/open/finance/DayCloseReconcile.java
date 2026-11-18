@@ -11,7 +11,7 @@ import java.util.Map;
  * 日结对账：把一天的支付拆分汇总，并与应收销售额比对；
  * 现金另算长短款（实点现金 − 应有现金）。
  * <p>
- * 纯函数，不依赖数据库。日结单的持久化、封账与导出不在本仓范围内。
+ * 纯函数，不依赖数据库。
  */
 public final class DayCloseReconcile {
 

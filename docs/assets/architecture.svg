@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>市枢业务架构</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="560" fill="#ffffff"/>
+
+  <!-- 第一层：三端 -->
+  <rect x="24" y="16" width="912" height="104" rx="14" fill="#eef4ff" stroke="#bcd0f7"/>
+  <text x="44" y="42" font-size="15" font-weight="700" fill="#1e3a8a">三端 · 同一份数据</text>
+  <g filter="url(#shadow)">
+    <rect x="44" y="54" width="272" height="56" rx="10" fill="#ffffff" stroke="#93b4f0"/>
+    <rect x="344" y="54" width="272" height="56" rx="10" fill="#ffffff" stroke="#93b4f0"/>
+    <rect x="644" y="54" width="272" height="56" rx="10" fill="#ffffff" stroke="#93b4f0"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="180" y="78" font-size="16" font-weight="700" fill="#0f172a">门里 · 后台管理</text>
+    <text x="180" y="98" font-size="12" fill="#64748b">商品 · 采购 · 库存 · 促销 · 财务 · 报表</text>
+    <text x="480" y="78" font-size="16" font-weight="700" fill="#0f172a">落秤 · 收银端</text>
+    <text x="480" y="98" font-size="12" fill="#64748b">收银 · 称重 · 秤下发 · 小票价签打印</text>
+    <text x="780" y="78" font-size="16" font-weight="700" fill="#0f172a">看板 · 手机端</text>
+    <text x="780" y="98" font-size="12" fill="#64748b">今日实收 · 毛利 · 库存预警 · 待办</text>
+  </g>
+
+  <!-- 层间箭头 -->
+  <line x1="480" y1="124" x2="480" y2="148" stroke="#64748b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="494" y="141" font-size="12" fill="#64748b">开单即同步</text>
+
+  <!-- 第二层：云端业务模块 -->
+  <rect x="24" y="152" width="912" height="244" rx="14" fill="#f6f8fb" stroke="#cfd8e6"/>
+  <text x="44" y="178" font-size="15" font-weight="700" fill="#1e293b">市枢云 · 业务模块</text>
+
+  <text x="44" y="204" font-size="12" font-weight="700" fill="#2563eb">进货与库存</text>
+  <g filter="url(#shadow)">
+    <rect x="44" y="212" width="272" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="344" y="212" width="272" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="644" y="212" width="272" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="180" y="239" font-size="15" font-weight="700" fill="#0f172a">商品与价签</text>
+    <text x="180" y="260" font-size="12" fill="#64748b">一品多码 · 联营商品 · 价签模板</text>
+    <text x="480" y="239" font-size="15" font-weight="700" fill="#0f172a">采购与库存</text>
+    <text x="480" y="260" font-size="12" fill="#64748b">批次效期 · 临期预警 · 补货建议</text>
+    <text x="780" y="239" font-size="15" font-weight="700" fill="#0f172a">AI 辅助录入</text>
+    <text x="780" y="260" font-size="12" fill="#64748b">拍照 · 送货单 · 草稿由人确认</text>
+  </g>
+
+  <text x="44" y="304" font-size="12" font-weight="700" fill="#2563eb">销售与财务</text>
+  <g filter="url(#shadow)">
+    <rect x="44" y="312" width="203" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="267" y="312" width="203" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="490" y="312" width="203" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="713" y="312" width="203" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="145" y="339" font-size="15" font-weight="700" fill="#0f172a">收银与促销</text>
+    <text x="145" y="360" font-size="12" fill="#64748b">满减 · 券 · 满折满赠 · 积分</text>
+    <text x="368" y="339" font-size="15" font-weight="700" fill="#0f172a">会员</text>
+    <text x="368" y="360" font-size="12" fill="#64748b">储值 · 积分 · 等级</text>
+    <text x="591" y="339" font-size="15" font-weight="700" fill="#0f172a">联营与财务</text>
+    <text x="591" y="360" font-size="12" fill="#64748b">扣点 · 应付 · 日结 · 对账</text>
+    <text x="814" y="339" font-size="15" font-weight="700" fill="#0f172a">报表与看板</text>
+    <text x="814" y="360" font-size="12" fill="#64748b">实收 · 毛利 · 预警</text>
+  </g>
+
+  <!-- 层间箭头 -->
+  <line x1="480" y1="400" x2="480" y2="424" stroke="#64748b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <!-- 第三层：店内设备与外部服务 -->
+  <rect x="24" y="428" width="912" height="116" rx="14" fill="#fff8ec" stroke="#f0d9a8"/>
+  <text x="44" y="454" font-size="15" font-weight="700" fill="#7c4a03">店内设备与外部服务</text>
+  <text x="196" y="454" font-size="12" fill="#92683a">落秤在店内局域网直接写入电子秤与打印机</text>
+  <g filter="url(#shadow)">
+    <rect x="44" y="468" width="203" height="60" rx="10" fill="#ffffff" stroke="#e8cf9c"/>
+    <rect x="267" y="468" width="203" height="60" rx="10" fill="#ffffff" stroke="#e8cf9c"/>
+    <rect x="490" y="468" width="203" height="60" rx="10" fill="#ffffff" stroke="#e8cf9c"/>
+    <rect x="713" y="468" width="203" height="60" rx="10" fill="#ffffff" stroke="#e8cf9c"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="145" y="494" font-size="15" font-weight="700" fill="#0f172a">电子秤</text>
+    <text x="145" y="514" font-size="12" fill="#64748b">大华 TM · PLU 下发</text>
+    <text x="368" y="494" font-size="15" font-weight="700" fill="#0f172a">小票 · 价签打印机</text>
+    <text x="368" y="514" font-size="12" fill="#64748b">本机打印</text>
+    <text x="591" y="494" font-size="15" font-weight="700" fill="#0f172a">支付通道</text>
+    <text x="591" y="514" font-size="12" fill="#64748b">收款 · 对账单导入</text>
+    <text x="814" y="494" font-size="15" font-weight="700" fill="#0f172a">识别与模型服务</text>
+    <text x="814" y="514" font-size="12" fill="#64748b">OCR · 结构化（经营版）</text>
+  </g>
+</svg>
