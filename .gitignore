@@ -1,0 +1,16 @@
+# Build output
+target/
+out/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Local secrets and environment (never commit)
+.env
+.env.*
+*.pem
+*.key

@@ -1,0 +1,37 @@
+# 市枢 · 商超收银与进销存系统（开源部分）
+
+市枢是门里后台、落秤收银、老板看板一体的商超收银与进销存系统，面向单店生鲜超市，也能接集团门店。
+
+本仓开源的是其中**联营扣点、满减与促销、应付与毛利、日结对账、大华秤 PLU 协议**这几块业务规则。它们以纯 Java 实现，不依赖数据库或 Spring，可以独立运行单元测试，方便你审阅算法、对照自己的业务口径，或者在自己的系统里复用。
+
+- **产品介绍**：[docs/product.md](docs/product.md)（痛点、设计理念、与常见方案对比、差异化能力）
+- **体验完整产品**：`http://trial.tyinuo.com/login`（固定体验店，HTTP；账号由运营告知）
+
+## 模块
+
+| 模块 | 说明 | 文档 |
+|------|------|------|
+| `saas-core` | 金额约定（2 位小数、HALF_UP）、经营方式与商品类型常量 | — |
+| `saas-consign` | 联营扣点解析与按合作方结算（店抽成、应付） | [docs/consign.md](docs/consign.md) |
+| `saas-promo` | 整单促销（买赠、N 件 M 元、第二件折、第 N 件固定价等）与满减 | [docs/architecture.md](docs/architecture.md) |
+| `saas-finance` | 应付到期、开闭状态与核销范围、毛利率、日结支付对账 | [docs/finance-payable.md](docs/finance-payable.md) |
+| `saas-device` | 大华 TM `!0V` PLU 编帧、GB2312 品名、TCP 下发示例、称重条码拆解与校验 | [docs/scale-plu.md](docs/scale-plu.md) |
+
+完整的设计取舍见 [docs/architecture.md](docs/architecture.md)。
+
+## 运行测试
+
+环境：JDK 17+，Maven 3.9+。
+
+```bash
+cd java
+mvn test
+```
+
+## 本仓不包含
+
+门里管理端、落秤收银端的界面代码，结账落库的完整编排，支付通道配置，以及部署密钥与环境配置。这些属于完整产品，请通过体验店了解。
+
+## 许可
+
+MIT，见 [LICENSE](LICENSE)。
