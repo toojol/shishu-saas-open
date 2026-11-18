@@ -93,3 +93,5 @@
 
 - 本仓库内的规则实现与文档：[README](../README.md)、[architecture.md](architecture.md)
 - 体验店：`http://trial.tyinuo.com/login`
+- 源码授权、二次开发、私有化部署：加微信【微信号待补充】，备注「源码 / 二开」+ 所在行业与门店数量
+- 交流群：【群二维码待补充】
