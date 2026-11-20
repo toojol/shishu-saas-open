@@ -165,7 +165,7 @@ public final class DemoApi {
         return Json.object(out);
     }
 
-    /** 大华 TM 的 PLU 下发帧（!0V…），价格单位元，品名按 GB2312 区位码编码。 */
+    /** PLU 下发帧（!0V…），价格单位元，品名按 GB2312 区位码编码。 */
     public static String pluFrame(String pluText, String name, String priceText) {
         int plu = parseInt(pluText, "PLU 号");
         if (plu < 1 || plu > 9999) {

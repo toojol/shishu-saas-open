@@ -47,8 +47,8 @@
     <text x="180" y="268" font-size="14" fill="#475569">一品多码 · 联营商品 · 价签</text>
     <text x="480" y="243" font-size="17" font-weight="700" fill="#0f172a">采购与库存</text>
     <text x="480" y="268" font-size="14" fill="#475569">批次效期 · 临期预警 · 补货</text>
-    <text x="780" y="243" font-size="17" font-weight="700" fill="#0f172a">AI 辅助录入</text>
-    <text x="780" y="268" font-size="14" fill="#475569">拍照 · 送货单 · 人工确认</text>
+    <text x="780" y="243" font-size="17" font-weight="700" fill="#0f172a">AI 识别录入</text>
+    <text x="780" y="268" font-size="14" fill="#475569">包装建档 · 送货入库</text>
   </g>
 
   <text x="44" y="310" font-size="14" font-weight="700" fill="#2563eb">销售与财务</text>
@@ -84,12 +84,12 @@
   </g>
   <g text-anchor="middle">
     <text x="145" y="515" font-size="17" font-weight="700" fill="#0f172a">电子秤</text>
-    <text x="145" y="538" font-size="14" fill="#475569">大华 TM · PLU 下发</text>
+    <text x="145" y="538" font-size="14" fill="#475569">PLU 一键下传</text>
     <text x="368" y="515" font-size="17" font-weight="700" fill="#0f172a">小票 · 价签打印机</text>
     <text x="368" y="538" font-size="14" fill="#475569">本机打印</text>
     <text x="591" y="515" font-size="17" font-weight="700" fill="#0f172a">支付通道</text>
     <text x="591" y="538" font-size="14" fill="#475569">收款 · 对账单导入</text>
     <text x="814" y="515" font-size="17" font-weight="700" fill="#0f172a">识别与模型服务</text>
-    <text x="814" y="538" font-size="14" fill="#475569">OCR · 结构化（经营版）</text>
+    <text x="814" y="538" font-size="14" fill="#475569">拍照识别 · 入库单</text>
   </g>
 </svg>

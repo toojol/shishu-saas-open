@@ -23,7 +23,7 @@ import java.util.Map;
  *   <li>POST /api/consign/settle —— 联营对账，文本每行一条</li>
  *   <li>POST /api/finance/day-close —— 日结支付对账</li>
  *   <li>GET  /api/device/scale-decode?code= —— 电子秤条码解析</li>
- *   <li>GET  /api/device/plu-frame?plu=&amp;name=&amp;price= —— 大华 PLU 帧预览</li>
+ *   <li>GET  /api/device/plu-frame?plu=&amp;name=&amp;price= —— PLU 下发帧预览</li>
  * </ul>
  * 其余路径从 web 目录提供静态页面。
  */
